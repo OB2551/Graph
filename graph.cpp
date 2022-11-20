@@ -183,8 +183,8 @@ graph graph::contraction(int V1, int V2) {
 			}
 		}
 		//if neighbour is not already a neighbour of V1, make it a neihgbour of V1
-		//exclude case where possibly V1 is a neighbour of V2
-		if (isNeighbour(V2, neighbour) and neighbour != V1)
+		//exclude case where  V1 is a neighbour of V2
+		if (!isNeighbour(V1, neighbour) and neighbour != V1)
 		{
 			new_adj[neighbour].push_back(V1);
 			new_adj[V1].push_back(neighbour);
