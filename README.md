@@ -1,5 +1,5 @@
 # Graph
-Basic GUI for graph creation and minimal colouring. Created using Qt designer. 
+Basic GUI for graph creation and minimal colouring. Created using Qt designer with C++. 
 
 The UI allows the user to construct a graph and has a graphics window with a representation of the graph. A graph can be created manually when setting layout to custom. Clicking on the graph window will create a node at that point. Edges can also be manuall added by clicking on two nodes to join.
 Alternatively one can use the button menu to construct the graph.
