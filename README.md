@@ -18,6 +18,6 @@ https://en.wikipedia.org/wiki/Graph_coloring
 
 
 
-![graph4](https://user-images.githubusercontent.com/67613774/202884894-83430f1b-3d4e-4a03-a6a7-7d40b54921e3.png)
 
 
+![graph5](https://user-images.githubusercontent.com/67613774/202887326-04ed8708-bb0d-4b58-b4f1-e93e1fd1c36d.png)
