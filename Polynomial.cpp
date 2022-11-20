@@ -91,10 +91,10 @@ std::string Polynomial::toString() {
 		{
 			if (this->coefficients[i] != 0)
 			{
-				s.append(std::to_string(this->coefficients[i]) + "x^" + std::to_string(i) + " + ");
+				s.append(  " + "+ std::to_string(this->coefficients[i])+"k^" + std::to_string(i));
 			}
 		}
-		if (i == this->degree()) { s.append(std::to_string(this->coefficients[i]) + "x^" + std::to_string(i)); }
+		if (i == this->degree()) { s.append(std::to_string(this->coefficients[i]) + "k^" + std::to_string(i)); }
 	}
 	return s;
 }
