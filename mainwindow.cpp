@@ -1105,11 +1105,11 @@ void Graph::on_calc_clicked()
     {
         Polynomial P = G.getChromaticPolynomial();
         std::string p = P.toString();
-        p.pop_back();
-        p.pop_back();
-        p.pop_back();
+  
+        //pop off leading one
+        p.erase(p.begin());
         //display chromatic polynomial and chromatic number
-        ui.chrom_poly->setText(QString::fromStdString(p)); 
+        ui.chrom_poly->setText(QString::fromStdString("P(G,k) = "+p)); 
         int k = G.chromaticNumber(P);
         ui.chromnum->setText(QString::fromStdString("X(G) = " + std::to_string(k)));
     }
@@ -1341,7 +1341,7 @@ void Graph::on_redo_clicked()
         
         switch (last_command)
         {
-         //if adding an edge was undone, add back edge, but without pushing command to undo stack
+         //if adding an edge was undone, add back edge
         case 1:
         {
             on_add_edge_clicked();
