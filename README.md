@@ -5,7 +5,12 @@ The UI allows the user to construct a graph and has a graphics window with a rep
 Alternatively one can use the button menu to construct the graph.
 
 The graph.cpp file contains a graph class, whose object is the underlying graph that the user is interacting with. The mainwindow.cpp file gives Graph window which contains representation of the underlying graph and methods for drawing it. The polynomial.cpp file contains a basic implementation for polynomials needed to compute the chromatic polynomial.
+
 The geometry of the graph can be altered from Euclidean to Hyperbolic.  Using a greedy colouring algorihtm a minimal colouring for a graph can be sought. DSatur and RFL colouring methods may be added laer. One can also show connected components and spanning trees using DFS.
+
+A single exe installation file  can be downloaded here:
+https://mega.nz/file/oG9XQLia#-y3b0ndJp7tBe5wvt6xh8wbgj8vHRm9xwIj4pS67bgY
+
 For more on graph colouring see here:
 https://en.wikipedia.org/wiki/Graph_coloring
 
