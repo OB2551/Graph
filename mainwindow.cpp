@@ -418,7 +418,7 @@ void Graph::draw_edges_hyp(int i, int j,QPen pen)
             break;
         }
     }
-    //convert to from radians to degrees
+    //convert from radians to degrees
     beta1 = beta1 * 180 / pi;
     beta2 = beta2 * 180 / pi;
 
@@ -445,13 +445,14 @@ void Graph::draw_edges_hyp(int i, int j,QPen pen)
 }
 
 void Graph::redraw_edges(QPen pen)
-{//redraw edge based on geometry settings
+    //redraw edges based on geometry settings
+{
     if (ui.euclidean_geometry->isChecked())
     {
-for (auto& edge : selected_edgelist)
-{
-    draw_edge(edge[0], edge[1],pen);
-}
+     for (auto& edge : selected_edgelist)
+       {
+         draw_edge(edge[0], edge[1],pen);
+       }
     }
     if (ui.hyperbolic_geometry->isChecked())
     {   
